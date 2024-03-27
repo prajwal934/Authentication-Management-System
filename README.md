@@ -1,4 +1,8 @@
+#Process
 In this project, I do authentication for a user and admin, Passing some endpoints
+
+#Intitution
+
 1: I am doing the validation by using Oauth2.0 
 A user can log in through the GitHub and the Google account 
 Give access to the admin and user, creating a Public and Private account for the user.
@@ -6,13 +10,14 @@ Implement authorization checks to allow admin users to access both public and pr
             USER: /api/v1/roles/user/users/register
             ADMIN: /api/v1/roles/admin/users/register
 
+#Explantion
+
 Generate the annotation and handle all the exceptions.
 The Hierarchy of this project is : 
       1. The user can't give the same email, if they give then an exception will be thrown 
       2. OidcUser can manually create the userId, UserName  by which a user can register 
       3. If the User is not registered then a Message passed "Login First", "Please Register Your Account"
       4. The user can fill up his details through the Google account so we can access it in our database.
-      
       5. Also creating the Roles for -ADMIN, USER
       
 
